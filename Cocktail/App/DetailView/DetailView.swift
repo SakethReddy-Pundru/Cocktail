@@ -14,8 +14,8 @@ import SwiftUI
 struct DetailView: View {
     
     // MARK: Environment and State Properties
-        
-        /// The environment object for managing navigation coordination.
+    
+    /// The environment object for managing navigation coordination.
     @EnvironmentObject private var coordinator: Coordinator
     
     /// State variable indicating whether the cocktail is marked as favorite.
@@ -25,8 +25,8 @@ struct DetailView: View {
     @ObservedObject var viewModel = MainViewModel()
     
     // MARK: Parameters
-       
-       /// The cocktail to display in detail.
+    
+    /// The cocktail to display in detail.
     var cocktail: CocktailDataModel
     
     /// The category of the cocktail for navigation purposes.
@@ -76,7 +76,7 @@ struct DetailView: View {
                     .font(.custom("Verdana", size: 14))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
-
+                
                 Spacer()
             }
         }
