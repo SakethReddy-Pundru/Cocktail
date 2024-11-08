@@ -32,7 +32,6 @@ class Coordinator: ObservableObject {
         case .main:
             MainView()
                 .navigationBarBackButtonHidden(true)
-//                .navigationTitle("All Cocktails")
                 .navigationBarTitleDisplayMode(.automatic)
         case .detail(let cocktail, let category):
             DetailView(cocktail: cocktail, category: category)
